@@ -20,7 +20,12 @@
    
    #math.isclose()
    import math
-   math,isclose(num1, num2)
+   math.isclose(num1, num2)
+   
+   import math
+   
+   print(f"0.1 * 3 : {0.1 * 3}")
+   print(f"0.1 * 3 == 0.3 : {math.isclose(0.1 * 0.2, 0.3)}")
    ```
 
    
