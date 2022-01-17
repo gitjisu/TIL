@@ -23,13 +23,12 @@
    math.isclose(num1, num2)
    
    import math
-   
-   print(f"0.1 * 3 : {0.1 * 3}")
-   print(f"0.1 * 3 == 0.3 : {math.isclose(0.1 * 0.2, 0.3)}")
+   print(math.isclose(0.1 * 3, 0.3))
+   true
    ```
-
    
-
+   
+   
 3. 이스케이프 시퀀스
 
    (1) 줄 바꿈, (2) 탭, (3) 백슬래시를 의미하는 이스케이프 시퀀스를 작성하시오.
