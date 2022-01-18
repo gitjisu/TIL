@@ -2,9 +2,13 @@
 
 1. python 예약어
 
-     python에서 사용할 수 없는 식별자(예약어)를 찾아 작성하시오.
+   python에서 사용할 수 없는 식별자(예약어)를 찾아 작성하시오.
 
    ```
+   import keyword
+   
+   print(keyword.kwlist)
+   
    False, None, True, and, as, assert, async, await, break, class, continue, def, del, elif, else, execpt, finally, for, from, global, if, import, in, is, lambda, nonlocal, not, kr, pass, raise, return, try, while, with, yield
    ```
 
@@ -88,8 +92,10 @@ int = 정수 type / 3.5 = float
    # n = 5
    # m = 9
    
-   print('*****' '\n' '*****' '\n''*****' '\n''*****' '\n''*****' '\n''*****' '\n''*****' '\n''*****' '\n''*****' '\n')
-   
+   n = 5
+   m = 9
+   n,m = 5,9
+   print(('*')*n+'\n')*m)
    ```
 
    
