@@ -45,7 +45,9 @@ for i in range(m):
 #### 5. 조건 표현식
 
 ```
-if temp >=37.5 '입실불가' else '입실가능'
+temp = 36.5
+status = if temp >=37.5 '입실불가' else '입실가능'
+print(status)
 ```
 
 
@@ -56,5 +58,15 @@ if temp >=37.5 '입실불가' else '입실가능'
 scores = [80, 89, 99, 83]
 
 print(sum(scores) / len(scores))
+
+--------------------------------------
+n = 0
+tot = 0
+for i in scores:
+	tot += i;
+	n += 1
+	
+score_avg = tot/n
+print(score_avg)
 ```
 
