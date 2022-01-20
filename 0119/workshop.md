@@ -24,7 +24,7 @@ print(sum(list))
 Dictionary로 이루어진 list를 전달 받아 모든 dictionary의 'age' key에 해당하는 value 들의 합을 반환하는 dict_list_sum 함수를 built-in 함수인 sum() 함수를 사용하지 않고 작성하시오.
 
 ```
-dict_list = {'name' : 'kim', 'age' : 12}, {'name' : 'lee', 'age' : 4}
+dict_list = [{'name' : 'kim', 'age' : 12}, {'name' : 'lee', 'age' : 4}]
 
 sum = 0
 for dic in dict_list:
@@ -45,19 +45,15 @@ print(sum)
 
 list = [[1],[2,3],[4,5,6],[7,8,9,10]]
 
-def sum(list):
-    sum = 0
-    for i in list[0]:  
-        sum += i
-    for i in list[1]:
-        sum += i
-    for i in list[2]:
-        sum += i
-    for i in list[3]:
-        sum += i
-    return sum
+def all_list_sum(list):
+    total = 0
+    for i in list:
+        for j in i:
+            total += j
+    return total
 
-print(sum(list))
+print(all_list_sum([[1], [2, 3], [4, 5, 6], [7, 8, 9, 10]]))
+
 
 ```
 
