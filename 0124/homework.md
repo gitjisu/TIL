@@ -1,24 +1,25 @@
 ```
-a = 'apple'
-print(a.count('a') + a.count('e'))
+def count_vowels(string):
+    total = 0
+    vowel = ['a','e','i','o','u']
+    for i in vowel:
+        total += string.count(i)
+    return total
 
-b = 'banana'
-print(b.count('a'))
+print(count_vowels('apple'))
+print(count_vowels('banana'))
 ```
 
 4번
 
 ```
-list = ([32,55,63],[13,32,40,55])
-
 def only_square_area(list):
     lst = []
     for i in list[0]:
-        for j in list[1]:
-            if i == j:
-                lst.append(i**2)
+        if i in list[1]:
+            lst.append(i**2)
     return lst
 
-print(only_square_area(list))
+print(only_square_area(([32,55,63],[13,32,40,55])))
 ```
 
