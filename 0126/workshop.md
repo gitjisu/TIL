@@ -1,6 +1,6 @@
 ```
 fake data가 필요할때 faker라이브러리를 사용할 수 있음
-터미널에서 실행
+git bash 터미널에서 실행
 ```
 
 ```
@@ -10,18 +10,18 @@ fake.name #name()은 fake의 메서드이다.
 ```
 
 ```
-def __init__(self, name)
+def __init__(self, locale = 'en_US')
 ```
 
 ```
 seed = 랜덤 추출시 샘플링 결과가 실행할 때 마다 고정된 값을 얻을 수 있게 해줌
-#1 shelly wilcox
-#2 박진우
+#1 이도윤
+#2 이지후
 ```
 
 ```
-seed_instance = 공유된 인스턴스와 분리된 자체 인스턴스로 변환
-#1 shelly wilcox
-#2 박진우
+seed_instance = 인스턴스 메서드
+#1 이도윤
+#2 유지우
 ```
 
