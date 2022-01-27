@@ -109,7 +109,7 @@
 # def low_and_up(lowup):
 # 	words_list = lowup.split()
 # 	new_list = []
-# 	for word in words_list: # b a n a n a
+# 	for word in words_list: 
 # 		new_words = " "
 # 		for i in range(len(word)):
 # 			if i % 2 == 0:
@@ -117,7 +117,32 @@
 # 			else :
 # 				new_words += word[i].upper()
 # 		new_list.append(new_words)
-# 	return " ".join(new_list)
+# 	return "".join(new_list)
+
+# print(low_and_up('apple'))
+# print(low_and_up('banana'))
+
+# def low_and_up(fruit):
+#     word = fruit.lower()
+#     result = ''
+#     for i in range(len(fruit)):
+#         if i % 2 :
+#             result += word[i].upper
+#         else: 
+#             result += word[i]
+#     return result
+            
+
+
+# def low_and_up(fruit):
+#     word = fruit.lower()
+#     result = ''
+#     for j in range(len(fruit)):
+#         if j % 2:
+#             result += word[j].upper()
+#         else:
+#             result += word[j]
+#     return result           
 
 # print(low_and_up('apple'))
 # print(low_and_up('banana'))
@@ -125,34 +150,42 @@
 
 
 
-
-
-
-# def lonely(num):
-#     result = []
-#     for i in num: # 1 1 3 3 0 1 1
-#         if len(result) != 0:
-#             if i == result[-1]:
-#                 pass
-#             else:
-#                 result.append(i)
-#         else:
-#             result.append(i)
-#     return result
+def lonely(num):
+	result = [num[0]]
+	for i in range(len(num)):
+		if num[i] != result[-1]:
+			result.append(num[i])	
+		
+	return result
 
 
                     
-# print(lonely([1, 1, 3, 3, 0, 1, 1]))
-# print(lonely([4, 4, 4, 3, 3]))
+print(lonely([1, 1, 3, 3, 0, 1, 1]))
+print(lonely([4, 4, 4, 3, 3]))
 
 
-from re import A
+# from re import A
 
 
-a = [1,2,3,4,5]
-b = a 
+# a = [1,2,3,4,5]
+# b = a 
 
-a[2] = 5
+# a[2] = 5
 
-print(a)
-print(b)
+# print(a)
+# print(b)
+
+
+# def low_and_up(fruit):
+#     word = fruit.lower()
+#     for i in fruit:
+#         result = ''
+#         for j in range(len(fruit)):
+#             if j % 2 == 1: #짝수가아니면 
+#                 result += word[j].upper()
+#             else: #짝수가아닌모든경우
+#                 result += word[j]
+#     return result
+
+# print(low_and_up('banana'))
+
