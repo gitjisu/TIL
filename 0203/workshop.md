@@ -3,7 +3,7 @@
 아래 그림과 같은 폴더 구조가 있다. resume.html에서 코드를 작성 중일 때, image  폴더 안의 my_photo.png를 보여주는 ![img]() tag를 작성하시오.  단, 이미지가 제대로 출력되지 않을 때는 ssafy 문자열이 출력 되도록 작성하시오
 
 ```
-<img src="C:\Users\Window 10\Desktop\TIL\ssafy\image\my_photo"alt="ssafy"
+<img src="C:\Users\Window 10\Desktop\TIL\ssafy\image\my_photo.jpg"alt="ssafy"
 ```
 
 
@@ -16,14 +16,16 @@
 
 (b) : 상대경로
 
-code = <img src="../image/my_photo"alt="ssafy"
+<img src="..\image\my_photo.jpg"alt="ssafy">
 
 
 
 3. Hyper Link
 
 ```
-<a href="ssafy.com"><img src="../image/my_photo"alt="ssafy"></a>
+<a href="ssafy.com">
+<img src="../image/my_photo"alt="ssafy">
+</a>
 ```
 
 
