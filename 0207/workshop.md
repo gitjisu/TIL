@@ -16,7 +16,7 @@
     <a href="#">
       <img src="images/logo.png" alt="Logo Image" >
     </a>
-    <ul p class="d-flex flex-row align-items-end" >
+    <ul class="d-flex align-items-center mb-0" >
       <li class="mx-3"><a class="text-decoration-none text-white" href="#">Home</a></li>
       <li class="mx-3"><a class="text-decoration-none text-white" href="#">Community</a></li>
       <li class="mx-3"><a class="text-decoration-none text-white" href="#">Login</a></li>
@@ -26,7 +26,7 @@
   <header class="d-flex justify-content-center align-items-center flex-column">
       <div class=" text-white fw-bold display-1">Cinema</div>
       <div class=" text-white fw-bold display-1">Community</div>
-      <a href="#" class="btn btn-primary my-5">Let's Go</a>
+      <a href="#" class="btn btn-primary btn-lg mt-5">Let's Go</a>
   </header>
 
   <!-- 3. Section -->
@@ -57,3 +57,6 @@
 
 ```
 
+fixed top -> sticky top 
+
+nav bar에 가려져 있던 영역 까지 보여줄 수 있음

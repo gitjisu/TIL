@@ -3,7 +3,7 @@
 1. 
 
 ```
- <button type="submit" class="btn btn-primary">Sign in</button>
+ <button type="submit" class="btn btn-success">Sign in</button>
 ```
 
 2. 
