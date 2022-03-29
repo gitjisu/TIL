@@ -26,7 +26,7 @@
    ```
 
 7. ````
-   a =
+   a = hello|length
    b = title
    ````
 
