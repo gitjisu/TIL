@@ -5,15 +5,15 @@
    ```
 
 2. ```
-   a ) .view
-   b ) index
-   c ) view.index 
+   a ) articles
+   b ) views
+   c ) views.index, name='index' 
    ```
 
 3. ```
    a) settings.py
    b) TEMPLATES
-   c) DIRS
+   c) STATICFILES_DIRS
    ```
 
 4. ```
@@ -26,7 +26,7 @@
 5. ```
    1) F
    2) T
-   3) T
+   3) F
    4) T
    ```
 
@@ -37,10 +37,10 @@
 
 7. ```
    1) T
-   2) T
+   2) F
    3) T
-   4) F
-   5) T
+   4) T
+   5) F
    ```
 
 8. ```
@@ -54,6 +54,7 @@
 
 10. ```
     accounts_user_following
+    from_user_id, to_user_id
     ```
-
+    
     
