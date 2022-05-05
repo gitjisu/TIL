@@ -29,7 +29,7 @@
       data: {
         lunch : ['국밥', '짜장면', '라면', '과일'],
         selectedLunch : '',
-        lotto: []
+        lotto: ' '
       },
       methods: {
         getlunch: function () {
@@ -39,8 +39,15 @@
         getnum: function () {
           const lower = 1
           const upper = 45
-          for (let i=0; i<6; i++){
-            this.lotto.push(_.random(lower, upper))
+          if (this.lotto.length === 0) {
+            for (let i=0; i<6; i++){
+              this.lotto.push(_.random(lower, upper))
+            }
+          } else {
+            this.lotto = []
+            for (let i=0; i<6; i++){
+              this.lotto.push(_.random(lower, upper))
+            }
           }
         }
       }
